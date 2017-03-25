@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2>Pagos ARS</h2>
+    <table class="table table-hover">
+    <thead>
+        <tr>
+            <th>Cedula</th>
+            <th>Monto</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for pago in object_list %}
+            <tr>
+            <td>{{ pago.cedula }}</td>
+            <td>{{ pago.monto }}</td>
+            </tr>
+        {% empty %}
+            <tr>
+                <td>Aun no hay pagos.</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+
+    </table>
+{% endblock %}

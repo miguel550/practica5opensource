@@ -1,0 +1,5 @@
+tricks:
+- watchdog.tricks.ShellCommandTrick:
+    patterns: ["*.csv"]
+    shell_command: "python insert_data.py ${watch_src_path}"
+    wait_for_process: true

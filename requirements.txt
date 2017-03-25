@@ -1,0 +1,6 @@
+argh==0.26.2
+Django==1.10.6
+pathtools==0.1.2
+pyftpdlib==1.5.1
+PyYAML==3.12
+watchdog==0.8.3
